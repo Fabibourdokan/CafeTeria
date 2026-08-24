@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café, Teria?</title>
+    <meta
+      name="description"
+      content="Protótipo de alta fidelidade para uma cafeteria moderna com menu, sobre e opções de cardápio."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="device-frame">
+      <header class="topbar">
+        <div class="brand">Café, Teria?</div>
+        <nav class="main-nav" aria-label="Menu principal">
+          <a href="#inicio" class="nav-link active">Início</a>
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#cardapio" class="nav-link">Cardápio</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="inicio" class="hero-grid">
+          <article class="feature-card feature-image">
+            <div class="feature-overlay"></div>
+            <div class="feature-caption">Nosso espaço</div>
+          </article>
+
+          <article class="feature-card feature-placeholder feature-people-cafe" aria-label="Pessoas tomando café na cafeteria">
+            <div class="card-blank"></div>
+          </article>
+
+          <article class="feature-card feature-placeholder feature-people-reading" aria-label="Pessoas lendo na cafeteria">
+            <div class="card-blank"></div>
+          </article>
+        </section>
+
+        <section id="sobre" class="about-panel">
+          <div class="about-header">
+            <h2>Sobre</h2>
+          </div>
+          <div class="about-body">
+            <p>
+              Nascemos para ser o seu refúgio diário e celebrar o prazer de desacelerar. 
+              Aqui, o café é tratado como arte, feito com ingredientes escolhidos a dedo e servido em um espaço que abraça. 
+              O lugar perfeito para ler, se inspirar e se conectar com quem você ama.
+            </p>
+          </div>
+        </section>
+
+        <section id="cardapio" class="menu-section">
+          <div class="section-heading">
+            <span>Cardápio</span>
+          </div>
+
+          <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Desenvolvido por Fabi Bourdokan</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
